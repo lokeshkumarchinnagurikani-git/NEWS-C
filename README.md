@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>NEW C</title>
+    <subtitle>read & post news</subtitle>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,6 +17,8 @@
 <a href="index.html">Home</a>
 
 <a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +51,6 @@ Don't have an account?
 </body>
 </html>
 
-<a href="dashboard.html">Dashboard</a>
 <!DOCTYPE html>
 <html lang="en">
 <head>
