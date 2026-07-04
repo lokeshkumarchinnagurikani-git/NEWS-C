@@ -19,7 +19,7 @@ content="width=device-width, initial-scale=1.0">
 
 <div class="logo">
 
-<h1>NES <span>C</span></h1>
+<h1>NEWS C <span>C</span></h1>
 
 <p>Post & Share News</p>
 
@@ -118,6 +118,122 @@ Share breaking news with everyone using NES C.
 </body>
 
 </html>
+<a href="login.html">
+    <button class="login-btn">Login</button>
+</a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NES C - Login</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+    text-align:center;
+}
+
+.login-box h1{
+    color:red;
+}
+
+.login-box p{
+    color:gray;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:darkred;
+}
+
+a{
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>NES C</h1>
+
+<p>Post & Share News</p>
+
+<h2>Login</h2>
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="login()">Login</button>
+
+<br><br>
+
+<a href="register.html">Create New Account</a>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
+function login(){
+
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+
+if(email=="admin@nesc.com" && password=="123456"){
+
+alert("Login Successful");
+
+window.location.href="dashboard.html";
+
+}
+else{
+
+alert("Invalid Email or Password");
+
+}
+
+}
 *{
 
 margin:0;
