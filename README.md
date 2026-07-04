@@ -281,3 +281,79 @@ padding:20px;
 margin-top:30px;
 
 }
+<section class="login-news">
+
+<h2>LOGIN NEWS</h2>
+
+<div class="login-news-card">
+
+<img src="images/newspaper.jpg" alt="Login News">
+
+<div class="news-content">
+
+<h3>Welcome to NES C</h3>
+
+<p>
+Login to your account to post news, share updates, comment on articles, and bookmark your favorite news stories.
+</p>
+
+<a href="login.html">
+<button>Login Now</button>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+.login-news{
+    width:90%;
+    margin:30px auto;
+    background:#ffffff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-news h2{
+    color:#d60000;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.login-news-card{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.login-news-card img{
+    width:300px;
+    border-radius:10px;
+}
+
+.news-content h3{
+    margin-bottom:10px;
+}
+
+.news-content p{
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.news-content button{
+    background:#d60000;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.news-content button:hover{
+    background:#a80000;
+}
+
