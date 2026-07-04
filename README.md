@@ -16,8 +16,182 @@
 <a href="index.html">Home</a>
 
 <a href="login.html">Login</a>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Login</h2>
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="login()">Login</button>
+
+<p>
+Don't have an account?
+<a href="register.html">Register</a>
+</p>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
 
 <a href="dashboard.html">Dashboard</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Daily News</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f2f2;
+}
+
+header{
+background:#0b8b3b;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:30px;
+}
+
+header button{
+background:red;
+color:white;
+border:none;
+padding:10px 18px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.container{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:220px;
+background:#222;
+height:100vh;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+.sidebar a:hover{
+background:#0b8b3b;
+}
+
+/* Main */
+
+.main{
+flex:1;
+padding:25px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:220px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 8px rgba(0,0,0,.2);
+text-align:center;
+}
+
+.card h2{
+color:#0b8b3b;
+margin-bottom:10px;
+}
+
+.news{
+margin-top:40px;
+}
+
+.news-card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 0 8px rgba(0,0,0,.2);
+}
+
+.news-card img{
+width:100%;
+max-height:250px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.news-card button{
+background:#0b8b3b;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+margin-top:10px;
+margin-right:10px;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Daily News Dashboard</h1>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+
 
 </nav>
 
@@ -232,148 +406,6 @@ Don't have an account?
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard - Daily News</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f2f2f2;
-}
-
-header{
-background:#0b8b3b;
-color:white;
-padding:15px 30px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-header h1{
-font-size:30px;
-}
-
-header button{
-background:red;
-color:white;
-border:none;
-padding:10px 18px;
-cursor:pointer;
-border-radius:5px;
-}
-
-.container{
-display:flex;
-}
-
-/* Sidebar */
-
-.sidebar{
-width:220px;
-background:#222;
-height:100vh;
-padding-top:20px;
-}
-
-.sidebar a{
-display:block;
-color:white;
-padding:15px;
-text-decoration:none;
-font-size:18px;
-}
-
-.sidebar a:hover{
-background:#0b8b3b;
-}
-
-/* Main */
-
-.main{
-flex:1;
-padding:25px;
-}
-
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-width:220px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 8px rgba(0,0,0,.2);
-text-align:center;
-}
-
-.card h2{
-color:#0b8b3b;
-margin-bottom:10px;
-}
-
-.news{
-margin-top:40px;
-}
-
-.news-card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 0 8px rgba(0,0,0,.2);
-}
-
-.news-card img{
-width:100%;
-max-height:250px;
-object-fit:cover;
-border-radius:8px;
-margin-bottom:15px;
-}
-
-.news-card button{
-background:#0b8b3b;
-color:white;
-border:none;
-padding:8px 15px;
-cursor:pointer;
-margin-top:10px;
-margin-right:10px;
-border-radius:5px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>Daily News Dashboard</h1>
-
-<button onclick="logout()">Logout</button>
-
-</header>
-
-<div class="container">
-
-<div class="sidebar">
 
 <a href="#">🏠 Dashboard</a>
 
